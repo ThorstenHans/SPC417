@@ -1,0 +1,13 @@
+﻿/* Place custom styles below */
+.sharecoffee-sample div {
+  margin:20px;
+  font-size:140%;
+}
+
+.sharecoffee-sample button {
+  margin-left:20px;
+}
+#app-web-url, #host-web-url {
+  margin-left:10px;
+  font-weight:bold;
+}

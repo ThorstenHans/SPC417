@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\App.js" Url="Scripts/App.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.map" Url="Scripts/jquery-1.9.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.min.js" Url="Scripts/jquery-1.9.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.js" Url="Scripts/jquery-1.9.1.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-1.9.1.intellisense.js" Url="Scripts/jquery-1.9.1.intellisense.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee\ShareCoffee.src.coffee" Url="Scripts/ShareCoffee/ShareCoffee.src.coffee" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee\ShareCoffee.min.js" Url="Scripts/ShareCoffee/ShareCoffee.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee\ShareCoffee.js.map" Url="Scripts/ShareCoffee/ShareCoffee.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee\ShareCoffee.js" Url="Scripts/ShareCoffee/ShareCoffee.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.coffee" Url="Scripts/ShareCoffee.TaskList.coffee" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.js" Url="Scripts/ShareCoffee.TaskList.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.min.js" Url="Scripts/ShareCoffee.TaskList.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Controllers.coffee" Url="Scripts/ShareCoffee.TaskList.Controllers.coffee" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Services.coffee" Url="Scripts/ShareCoffee.TaskList.Services.coffee" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Controllers.js" Url="Scripts/ShareCoffee.TaskList.Controllers.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Controllers.min.js" Url="Scripts/ShareCoffee.TaskList.Controllers.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Services.js" Url="Scripts/ShareCoffee.TaskList.Services.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Services.min.js" Url="Scripts/ShareCoffee.TaskList.Services.min.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D68BD95D-6192-497D-8E59-12278A72265D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShareCoffee.TaskList</RootNamespace>
+    <AssemblyName>ShareCoffee.TaskList</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+    <ProjectMode>SharePointApp</ProjectMode>
+    <AppFeaturePartId>{722ebe70-2484-435a-a869-9d5d976841ff}</AppFeaturePartId>
+    <WspPartId>{fa5e3297-e759-409c-bd9e-871063c12208}</WspPartId>
+    <WorkflowPartId>{6e62235f-049a-4fac-9069-5e944b9d9773}</WorkflowPartId>
+    <CspkgPartId>{aa5488be-d151-4ba4-b2a4-1b398597f088}</CspkgPartId>
+    <SqlPackagePartId>{a4ce35a6-ae29-44d2-8361-2f47fbaf012d}</SqlPackagePartId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Scripts\ShareCoffee.TaskList.Controllers.js">
+      <DependentUpon>ShareCoffee.TaskList.Controllers.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee.TaskList.Controllers.min.js">
+      <DependentUpon>ShareCoffee.TaskList.Controllers.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee.TaskList.js">
+      <DependentUpon>ShareCoffee.TaskList.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee.TaskList.min.js">
+      <DependentUpon>ShareCoffee.TaskList.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee.TaskList.Services.js">
+      <DependentUpon>ShareCoffee.TaskList.Services.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee.TaskList.Services.min.js">
+      <DependentUpon>ShareCoffee.TaskList.Services.coffee</DependentUpon>
+    </Content>
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
+    <Content Include="ShareCoffee_Tasks\Elements.xml" />
+    <Content Include="ShareCoffee_Tasks\Schema.xml" />
+    <Content Include="ShareCoffee_Tasks\ShareCoffee_TasksInstance\Elements.xml" />
+    <None Include="packages.config" />
+    <None Include="Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19c36369-cc72-47a2-ae1d-ce0bc667615c}</SharePointProjectItemId>
+    </None>
+    <Content Include="Pages\Elements.xml" />
+    <Content Include="Pages\Default.aspx" />
+    <None Include="Scripts\ShareCoffee.TaskList.coffee" />
+    <None Include="Scripts\ShareCoffee.TaskList.Controllers.coffee" />
+    <None Include="Scripts\ShareCoffee.TaskList.Services.coffee" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.js.map" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.src.coffee" />
+    <None Include="ShareCoffee_Tasks\ShareCoffee_TasksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb3f9e2b-2cff-4ae4-a086-92812bc08c7a}</SharePointProjectItemId>
+    </None>
+    <None Include="ShareCoffee_Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{33a953e1-d5ee-40c4-bf35-9d49eb795e61}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a4ce35a6-ae29-44d2-8361-2f47fbaf012d}</SharePointProjectItemId>
+    </None>
+    <Content Include="Scripts\Elements.xml" />
+    <Content Include="Scripts\App.js" />
+    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\_references.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a5951231-6cdf-405d-a74f-7cb760845db5}</SharePointProjectItemId>
+    </None>
+    <Content Include="Content\Elements.xml" />
+    <Content Include="Content\App.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\AppIcon.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Images\Elements.xml" />
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d0f82b7d-3df6-46e9-82bf-ef1fefe83e1b}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Package\Package.package">
+      <PackageId>{e11e108c-2358-46dc-98eb-865c8216cc71}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{85fa79de-b520-4bfb-86e4-0fb011922f08}</FeatureId>
+    </None>
+    <None Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppManifestFile Include="AppManifest.xml">
+      <SubType>Designer</SubType>
+    </AppManifestFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

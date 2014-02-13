@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Tasks" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Tasks" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Prepare slides for SPC417</Field>
+          <Field Name="Status">Completed</Field>
+          <Field Name="PercentComplete">1</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Create 'Getting Started with ShareCoffee' Demo</Field>
+          <Field Name="Status">Not Started</Field>
+          <Field Name="PercentComplete">0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Create 'Getting Started with ShareCoffee' Video</Field>
+          <Field Name="Status">Not Started</Field>
+          <Field Name="PercentComplete">0</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

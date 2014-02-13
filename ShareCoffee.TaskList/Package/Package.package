@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="e11e108c-2358-46dc-98eb-865c8216cc71" 
+        solutionId="e11e108c-2358-46dc-98eb-865c8216cc71" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ShareCoffee.TaskList"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="85fa79de-b520-4bfb-86e4-0fb011922f08" />
+  </features>
+</package>
