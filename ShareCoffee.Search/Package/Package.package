@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="bd3f5fe3-e615-4e67-be83-a14a0199043c" 
+        solutionId="bd3f5fe3-e615-4e67-be83-a14a0199043c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ShareCoffee.Search"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="e66cb539-273f-4621-982e-de08b6e208de" />
+  </features>
+</package>
