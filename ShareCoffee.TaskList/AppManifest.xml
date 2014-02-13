@@ -7,7 +7,7 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>ShareCoffee.TaskList</Title>
+    <Title>ShareCoffee TaskLists</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 

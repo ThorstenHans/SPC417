@@ -1,0 +1,25 @@
+﻿@using ShareCoffee.PictureBrowserWeb.Extensions
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharePoint - PictureBrowser</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="sharepoint-chrome"></div>
+    <ul class="nav nav-pills pull-right">
+      <li><a href="@Url.Action("Home", "Home",true)">Home</a></li>
+      <li><a href="@Url.Action("Home", "Wall",true)#">Wall</a></li>
+      <li><a href="@Url.Action("Home", "AnimatedWall",true)">Animated Wall</a></li>
+    </ul>
+    @RenderBody()
+    
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/sharecoffee")
+    @Scripts.Render("~/bundles/chrome")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

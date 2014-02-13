@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ce799f60-b19d-4c70-b554-50a05f68d8af" solutionId="ce799f60-b19d-4c70-b554-50a05f68d8af" resetWebServer="false" sharePointProductVersion="15.0" name="ShareCoffee.PictureBrowser" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="36ce2228-fb30-46c3-ba8b-7264f8def39f" />
+  </features>
+</package>

@@ -1,0 +1,39 @@
+﻿/* Place custom styles below */
+
+.task {
+  border:1px solid #999;
+  border-radius: 4px;
+  background:#dfdfdf;
+  height: 25px;
+  width:90%;
+  margin: 10px 20px;
+  font-size:15px;
+  font-weight:bold;
+  text-indent: 20px;
+  padding:4px;
+}
+.profile {
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+.new-task {
+  
+  
+  width:90%;
+  margin: 10px 20px;
+  font-size:15px;
+  font-weight:bold;
+  text-indent: 20px;
+  padding:4px;
+}
+
+.new-task input{
+  border:1px solid #999;
+  border-radius: 4px;
+  width:70%;
+}
+
+.done {
+  text-decoration:line-through;
+}
