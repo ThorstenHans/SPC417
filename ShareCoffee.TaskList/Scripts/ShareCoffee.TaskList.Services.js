@@ -27,7 +27,19 @@
           return $http(properties).success(onTaskAdded).error(onError);
         },
         toggleTask: function(task, onTaskToggled, onError) {
-          return onTaskToggled();
+          var properties, updateTask;
+          updateTask = {
+            '__metadata': {
+              'type': 'SP.Data.TasksListItem'
+            },
+            'Status': task.Status,
+            'PercentComplete': task.PercentComplete
+          };
+          properties = ShareCoffee.REST.build.update["for"].angularJS({
+            url: "web/lists/GetByTitle('Tasks')/items/GetById(" + task.Id + ")",
+            payload: updateTask
+          });
+          return $http(properties).success(onTaskToggled).error(onError);
         }
       };
     }

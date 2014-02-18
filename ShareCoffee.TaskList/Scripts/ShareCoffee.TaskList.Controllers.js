@@ -22,6 +22,13 @@
         return taskListService.addTask($scope.newTask, onTaskAdded);
       };
       $scope.toggle = function(task) {
+        var onError, onTaskToggled;
+        onTaskToggled = function(data) {
+          return console.log(data);
+        };
+        onError = function(data) {
+          return console.log(data);
+        };
         if (task.Status === 'Completed') {
           task.Status = 'Not Started';
           task.PercentComplete = 0;
@@ -29,7 +36,7 @@
           task.Status = 'Completed';
           task.PercentComplete = 1;
         }
-        return taskListService.toggleTask(task);
+        return taskListService.toggleTask(task, onTaskToggled, onError);
       };
       return $scope.init();
     }

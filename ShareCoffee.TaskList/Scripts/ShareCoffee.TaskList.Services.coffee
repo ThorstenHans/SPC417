@@ -25,7 +25,16 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
     
 
     toggleTask: (task, onTaskToggled, onError) ->
-      onTaskToggled()
+      updateTask =
+        '__metadata':
+          'type': 'SP.Data.TasksListItem'
+        'Status': task.Status
+        'PercentComplete': task.PercentComplete
+      properties = ShareCoffee.REST.build.update.for.angularJS
+        url: "web/lists/GetByTitle('Tasks')/items/GetById(#{task.Id})"
+        payload: updateTask
+
+      $http(properties).success(onTaskToggled).error(onError)
   }
 ]
 

@@ -16,13 +16,17 @@ ShareCoffeeTaskList.controller 'taskListController', ['$scope','taskListService'
     taskListService.addTask $scope.newTask, onTaskAdded
 
   $scope.toggle = (task) ->
+    onTaskToggled = (data)->
+      console.log data
+    onError = (data)->
+      console.log data
     if task.Status is 'Completed'
       task.Status = 'Not Started'
       task.PercentComplete = 0
     else
       task.Status = 'Completed'
       task.PercentComplete = 1
-    taskListService.toggleTask task
+    taskListService.toggleTask task, onTaskToggled, onError
 
   $scope.init()
 ]
