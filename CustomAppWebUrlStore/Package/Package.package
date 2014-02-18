@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b93aca71-f887-4ec4-99f9-abef5e91c953" solutionId="b93aca71-f887-4ec4-99f9-abef5e91c953" resetWebServer="false" sharePointProductVersion="15.0" name="CustomAppWebUrlStore" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="bfbbd447-77c6-4387-9afd-ebf29eed9817" />
+  </features>
+</package>
