@@ -7,8 +7,8 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>ShareCoffee.Search</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <Title>SPC417 - Search</Title>
   </Properties>
 
   <AppPrincipal>

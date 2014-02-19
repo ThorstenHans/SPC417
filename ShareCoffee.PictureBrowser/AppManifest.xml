@@ -7,8 +7,8 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>ShareCoffee.PictureBrowser</Title>
     <StartPage>~remoteAppUrl/?{StandardTokens}</StartPage>
+    <Title>SPC417 - PictureBrowser</Title>
   </Properties>
 
   <AppPrincipal>

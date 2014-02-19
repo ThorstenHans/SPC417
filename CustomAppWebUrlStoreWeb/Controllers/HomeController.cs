@@ -13,7 +13,8 @@ namespace CustomAppWebUrlStoreWeb.Controllers
       return View();
     }
 
- public JsonResult AppWebUrl()
+
+    public JsonResult AppWebUrl()
     {
       return new JsonResult
       {
@@ -22,24 +23,14 @@ namespace CustomAppWebUrlStoreWeb.Controllers
       };
     }
 
-
- public JsonResult AppWebUrl()
- {
-   return new JsonResult
-   {
-     Data = "http://mysharepoint.appweb.url/",
-     JsonRequestBehavior = JsonRequestBehavior.AllowGet
-   };
- }
-
- public JsonResult HostWebUrl()
- {
-   return new JsonResult
-   {
-     Data = "http://mysharepoint.hostweb.url/",
-     JsonRequestBehavior = JsonRequestBehavior.AllowGet
-   };
- }
+    public JsonResult HostWebUrl()
+    {
+      return new JsonResult
+      {
+        Data = "http://mysharepoint.hostweb.url/",
+        JsonRequestBehavior = JsonRequestBehavior.AllowGet
+      };
+    }
 
 
     public ActionResult Contact()
