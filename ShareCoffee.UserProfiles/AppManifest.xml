@@ -7,13 +7,14 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>ShareCoffee.UserProfiles</Title>
+    <Title>SPC417 - vCard</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>
     <Internal />
   </AppPrincipal>
-
-
+  <AppPermissionRequests>
+    <AppPermissionRequest Scope="http://sharepoint/social/tenant" Right="Read" />
+  </AppPermissionRequests>
 </App>

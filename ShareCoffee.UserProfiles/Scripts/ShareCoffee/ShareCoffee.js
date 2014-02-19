@@ -132,6 +132,10 @@ ShareCoffee (c) 2013 Thorsten Hans
 
   })();
 
+  if (root.$s == null) {
+    root.$s = root.ShareCoffee;
+  }
+
   root = typeof window !== "undefined" && window !== null ? window : global;
 
   root.ShareCoffee || (root.ShareCoffee = {});
@@ -317,7 +321,6 @@ ShareCoffee (c) 2013 Thorsten Hans
         contentType: ShareCoffee.REST.applicationType,
         headers: {
           'Accept': ShareCoffee.REST.applicationType,
-          'X-RequestDigest': ShareCoffee.Commons.getFormDigest(),
           'X-HTTP-Method': 'MERGE',
           'If-Match': options.eTag
         },
@@ -325,7 +328,8 @@ ShareCoffee (c) 2013 Thorsten Hans
       };
       if (this.method === 'GET') {
         delete result.contentType;
-        delete result.headers['X-RequestDigest'];
+      } else {
+        result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest();
       }
       if (!(this.method === 'POST' && (options.eTag != null))) {
         delete result.headers['X-HTTP-Method'];
@@ -355,7 +359,6 @@ ShareCoffee (c) 2013 Thorsten Hans
         headers: {
           'Accept': ShareCoffee.REST.applicationType,
           'Content-Type': ShareCoffee.REST.applicationType,
-          'X-RequestDigest': ShareCoffee.Commons.getFormDigest(),
           'X-HTTP-Method': 'MERGE',
           'If-Match': options.eTag
         },
@@ -363,7 +366,8 @@ ShareCoffee (c) 2013 Thorsten Hans
       };
       if (this.method === 'GET') {
         delete result.headers['Content-Type'];
-        delete result.headers['X-RequestDigest'];
+      } else {
+        result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest();
       }
       if (!(this.method === 'POST' && (options.eTag != null))) {
         delete result.headers['X-HTTP-Method'];
@@ -396,7 +400,6 @@ ShareCoffee (c) 2013 Thorsten Hans
           contentType: ShareCoffee.REST.applicationType,
           headers: {
             'Accept': ShareCoffee.REST.applicationType,
-            'X-RequestDigest': ShareCoffee.Commons.getFormDigest(),
             'If-Match': options.eTag,
             'X-HTTP-Method': 'MERGE'
           },
@@ -406,7 +409,8 @@ ShareCoffee (c) 2013 Thorsten Hans
         };
         if (this.method === 'GET') {
           delete result.contentType;
-          delete result.headers['X-RequestDigest'];
+        } else {
+          result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest();
         }
         if (!(this.method === 'POST' && (options.eTag != null))) {
           delete result.headers['X-HTTP-Method'];

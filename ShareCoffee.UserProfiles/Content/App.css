@@ -1,1 +1,25 @@
 ﻿/* Place custom styles below */
+.vcard {
+  width:330px;
+  height:120px;
+  background: #dddddd;
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding:7px;
+}
+.vcard-name {
+  float: left;
+}
+
+.bump{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.vcard-pic {
+  float:right;
+  padding:7px;
+}
+.clear-fix {
+  clear:both;
+}

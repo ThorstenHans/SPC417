@@ -41,15 +41,27 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
+    <Content Include="vCard\Elements.xml">
+      <OpcRelationship>feature-elementmanifest</OpcRelationship>
+    </Content>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9801ec9c-2c89-460e-a38b-393e13c53462}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.js.map" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.src.coffee" />
+    <None Include="vCard\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f3601883-c709-4456-9eb1-a1e2153a1922}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js.map" />
+    <None Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.src.coffee" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{df1c2cab-b271-4aa5-b46e-55bc64217bb0}</SharePointProjectItemId>
     </None>
@@ -58,6 +70,9 @@
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js" />
+    <Content Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.min.js" />
+    <Content Include="Scripts\vCard.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>

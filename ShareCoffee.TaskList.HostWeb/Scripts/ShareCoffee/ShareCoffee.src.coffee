@@ -114,7 +114,7 @@ root.ShareCoffee.Commons = class
   @getFormDigest = () ->
     document.getElementById('__REQUESTDIGEST').value
 
-# Node.JS doesn't offer window... 
+# Node.JS doesn't offer window...
 root = global ? window
 
 # ensure the core namespace
@@ -123,8 +123,8 @@ root.ShareCoffee or = {}
 # ##ShareCoffee.Core
 # This class is used internally because these methods are used more frequently within the entire project
 root.ShareCoffee.Core = class
-  
-  # ##checkConditions 
+
+  # ##checkConditions
   # checkConditions evaluates the method provided as 2nd parameter and throw's an error as far as the return value is false.
   #
   # ### Parameters
@@ -136,7 +136,7 @@ root.ShareCoffee.Core = class
       console.error errorMessage if console and console.error
       throw errorMessage
 
-  # ##loadScript 
+  # ##loadScript
   # loadScript loads JavaScript resources from any url and adds it to the current <head> tag.
   #
   # ### Parameters
@@ -154,6 +154,8 @@ root.ShareCoffee.Core = class
     s.onerror = onError
     head.appendChild(s)
 
+# shorthand for ShareCoffee
+root.$s = root.ShareCoffee unless root.$s?
 
 # Node.JS doesn't offer window...
 root = window ? global
@@ -311,14 +313,14 @@ root.ShareCoffee.RESTFactory = class
       contentType: ShareCoffee.REST.applicationType
       headers:
         'Accept' : ShareCoffee.REST.applicationType
-        'X-RequestDigest' : ShareCoffee.Commons.getFormDigest()
         'X-HTTP-Method' : 'MERGE'
         'If-Match' : options.eTag
       data: if typeof options.payload is 'string' then options.payload else JSON.stringify(options.payload)
 
     if @method is 'GET'
       delete result.contentType
-      delete result.headers['X-RequestDigest']
+    else
+      result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest()
 
     delete result.headers['X-HTTP-Method'] unless @method is 'POST' and options.eTag?
     delete result.headers['If-Match'] unless @method is 'DELETE' or (@method is 'POST' and options.eTag?)
@@ -340,14 +342,14 @@ root.ShareCoffee.RESTFactory = class
       headers:
         'Accept' : ShareCoffee.REST.applicationType
         'Content-Type': ShareCoffee.REST.applicationType
-        'X-RequestDigest': ShareCoffee.Commons.getFormDigest()
         'X-HTTP-Method' : 'MERGE'
         'If-Match' : options.eTag
       data: if typeof options.payload is 'string' then options.payload else JSON.stringify(options.payload)
 
     if @method is 'GET'
       delete result.headers['Content-Type']
-      delete result.headers['X-RequestDigest']
+    else
+      result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest()
 
     delete result.headers['X-HTTP-Method'] unless @method is 'POST' and options.eTag?
     delete result.headers['If-Match'] unless @method is 'DELETE' or (@method is 'POST' and options.eTag?)
@@ -371,7 +373,6 @@ root.ShareCoffee.RESTFactory = class
         contentType: ShareCoffee.REST.applicationType
         headers:
           'Accept' : ShareCoffee.REST.applicationType
-          'X-RequestDigest': ShareCoffee.Commons.getFormDigest()
           'If-Match' : options.eTag
           'X-HTTP-Method' : 'MERGE'
         data: if options.payload? and typeof options.payload is 'string' then options.payload else JSON.stringify(options.payload)
@@ -381,7 +382,8 @@ root.ShareCoffee.RESTFactory = class
 
       if @method is 'GET'
         delete result.contentType
-        delete result.headers['X-RequestDigest']
+      else
+        result.headers['X-RequestDigest'] = ShareCoffee.Commons.getFormDigest()
 
       delete result.headers['X-HTTP-Method'] unless @method is 'POST' and options.eTag?
       delete result.headers['If-Match'] unless @method is 'DELETE' or (@method is 'POST' and options.eTag?)
