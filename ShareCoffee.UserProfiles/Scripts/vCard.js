@@ -7,17 +7,22 @@ window.vCardApp.config([
       $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|sip):/);
       
     }
-]); 
+]);
+
 window.vCardApp.service('vCardService', ['$http', function ($http) {
   return {
     loadMyCard: function (onSuccess, onError) {
       
-      $http(ShareCoffee.REST.UserProfiles.build.getMyProperties.for.angularJS({url: ShareCoffee.Url.GetMyProperties}))
-        .success(onSuccess)
-        .error(onError);
+      
+
+
     }
   };
 }]);
+
+
+
+
 window.vCardApp.controller('vCardController', ['$scope','vCardService', function ($scope,vCardService) {
   $scope.mail = '';
   $scope.name = '';

@@ -17,7 +17,7 @@ namespace ShareCoffee.PictureBrowserWeb.Extensions
             .ToArray();
         return "?" + string.Join("&", array);
     }
-    public static string Action(this UrlHelper instance, String controller, String action, bool includeQueryString)
+    public static string Action(this UrlHelper instance, String controller, String action, bool includeQueryString, bool foo)
     {
       var url = instance.Action(action, controller);
       if (includeQueryString)

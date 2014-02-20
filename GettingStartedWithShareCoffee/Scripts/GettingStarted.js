@@ -12,6 +12,7 @@ $(document).ready(function () {
 var currentStatusId = -1;
 
 
+
 function preventPageReload(e) {
   e.preventDefault();
   return false;

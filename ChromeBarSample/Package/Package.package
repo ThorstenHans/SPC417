@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8a0504e6-a5f1-42ce-968c-5bedd523a328" solutionId="8a0504e6-a5f1-42ce-968c-5bedd523a328" resetWebServer="false" sharePointProductVersion="15.0" name="ChromeBarSample" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="07783d1d-05c6-43d9-8f29-415cac4fa05e" />
+  </features>
+</package>

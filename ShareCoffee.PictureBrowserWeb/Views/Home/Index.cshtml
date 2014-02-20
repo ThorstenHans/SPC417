@@ -6,3 +6,15 @@
     <h2>Welcome</h2>
     <p>SharePoint's Picture Browser allows you to build picture walls based on a SharePoint picutre library.</p>
 </div>
+
+<div data-ng-app="PictureBrowser">
+  <div data-ng-controller="pictureController">
+  
+        <flex-slider id="foo" slide="s in pics">
+        <li>
+          <img class="image" ng-src="{{s}}">
+        </li>
+      </flex-slider>
+
+  </div>
+</div>

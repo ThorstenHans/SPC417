@@ -7,19 +7,17 @@
     <title>SharePoint - PictureBrowser</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
 </head>
 <body>
     <div id="sharepoint-chrome"></div>
-    <ul class="nav nav-pills pull-right">
-      <li><a href="@Url.Action("Home", "Home",true)">Home</a></li>
-      <li><a href="@Url.Action("Home", "Wall",true)#">Wall</a></li>
-      <li><a href="@Url.Action("Home", "AnimatedWall",true)">Animated Wall</a></li>
-    </ul>
+ 
     @RenderBody()
-    
+    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/sharecoffee")
-    @Scripts.Render("~/bundles/chrome")
+    @Scripts.Render("~/bundles/sample") 
     @RenderSection("scripts", required: false)
 </body>
 </html>

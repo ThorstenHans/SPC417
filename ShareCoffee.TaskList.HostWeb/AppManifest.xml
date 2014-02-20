@@ -2,7 +2,7 @@
 <!--Created:cb85b80c-f585-40ff-8bfc-12ff4d0e34a9-->
 <App xmlns="http://schemas.microsoft.com/sharepoint/2012/app/manifest"
      Name="ShareCoffeeHostWebTaskList"
-     ProductID="{19c36369-cc72-47a2-ae1d-ce0bc667615c}"
+     ProductID="{19c36369-cc72-47a2-ae1d-ce0bc6676921}"
      Version="1.0.0.0"
      SharePointMinVersion="15.0.0.0"
 >

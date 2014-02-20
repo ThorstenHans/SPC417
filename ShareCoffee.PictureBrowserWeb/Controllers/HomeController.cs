@@ -20,7 +20,7 @@ namespace ShareCoffee.PictureBrowserWeb.Controllers
 
     public ActionResult AnimatedWall()
     {
-      return RedirectToAction("Index");
+      return View();
     }
 
     public ActionResult About()
