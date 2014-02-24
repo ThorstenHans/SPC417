@@ -12,8 +12,7 @@ namespace CustomAppWebUrlStoreWeb.Controllers
     {
       return View();
     }
-
-
+    
     public JsonResult AppWebUrl()
     {
       return new JsonResult
