@@ -11,7 +11,29 @@ $(document).ready(function () {
 
 var currentStatusId = -1;
 
+function getHostWebUrl() {
+  return ShareCoffee.Commons.getHostWebUrl();
+}
 
+function getAppWebUrl() {
+  return ShareCoffee.Commons.getAppWebUrl();
+}
+
+
+function addNotification(e) {
+  ShareCoffee.UI.showNotification("This notification has been created with ShareCoffee");
+  preventPageReload(e);
+}
+
+function showStatus(e) {
+  currentStatusId = ShareCoffee.UI.showStatus("Status Title", "<b>ShareCoffee</b> status check <a href='foo'>this</a>");
+  preventPageReload(e);
+}
+
+function setStatusColor(e) {
+  ShareCoffee.UI.setStatusColor(currentStatusId, 'yellow');
+  preventPageReload(e);
+}
 
 function preventPageReload(e) {
   e.preventDefault();

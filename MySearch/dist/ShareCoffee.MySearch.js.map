@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "ShareCoffee.MySearch.js",
+  "sourceRoot": "",
+  "sources": [
+    "ShareCoffee.MySearch.src.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;;;;CAAA;CAAA;CAAA;CAAA,GAAA,EAAA;;CAAA,CAKA,CAAO,CAAP,EALA;;CAOA,CAAA,EAAO,sBAAJ,KAAH;CACC,GAAU,CAAA,KAAA,CAAA;IARX;;CAAA,CAUA,CAA4B,CAAxB,IAAJ,GAAgB;CAVhB"
+}

@@ -2,7 +2,7 @@
 ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
   {
     loadTasks: (onTasksLoaded, onError) ->
-
+      
       properties = ShareCoffee.REST.build.read.for.angularJS
         url: "web/lists/GetByTitle('Tasks')/items?$Select=Title,Status"
 
@@ -20,7 +20,7 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
       properties = ShareCoffee.REST.build.create.for.angularJS
         url: "web/lists/GetByTitle('Tasks')/items"
         payload: newTask
-
+        
       $http(properties).success(onTaskAdded).error(onError)
     
 

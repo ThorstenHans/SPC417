@@ -1,0 +1,33 @@
+{
+  "name": "ShareCoffee",
+  "version": "0.0.10",
+  "homepage": "https://github.com/ThorstenHans/ShareCoffee",
+  "authors": [
+    "Thorsten Hans <thorsten.hans@gmail.com>"
+  ],
+  "description": "SharePoint App Developers Toolset",
+  "main": "dist/ShareCoffee.min.js",
+  "keywords": [
+    "SharePoint",
+    "Apps",
+    "CoffeeScript",
+    "ShareCoffee"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.10",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.10",
+    "commit": "1948a2818ec2d9da5bc08c73d8a92a387b523beb"
+  },
+  "_source": "git://github.com/ThorstenHans/ShareCoffee.git",
+  "_target": "*",
+  "_originalSource": "ShareCoffee"
+}

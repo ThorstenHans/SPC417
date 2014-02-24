@@ -13,7 +13,8 @@ window.PictureBrowser.service('pictureService', ['$http', function ($http) {
     },
     loadPictures: function (onPicturesLoaded, onErrorLoadingPictures) {
        
-        var executor = new SP.RequestExecutor(ShareCoffee.Commons.getAppWebUrl());
+      var executor = new SP.RequestExecutor(ShareCoffee.Commons.getAppWebUrl());
+
         executor.executeAsync(ShareCoffee.CrossDomain.build.read.for.SPCrossDomainLib({
           url: "web/lists/getByTitle('Pictures')/items?$select=EncodedAbsUrl",
           onSuccess: onPicturesLoaded,
