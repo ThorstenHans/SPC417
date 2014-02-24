@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\jquery-1.9.1.min.map" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.js.map" />
+    <None Include="Scripts\ShareCoffee\ShareCoffee.src.coffee" />
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{bd783033-9376-4f46-9aac-692a38b4dc85}</SharePointProjectItemId>
     </None>
@@ -59,6 +61,8 @@
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
+    <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
