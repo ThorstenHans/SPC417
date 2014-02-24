@@ -18,7 +18,9 @@ namespace ShareCoffee.PictureBrowserWeb
       bundles.Add(new ScriptBundle("~/bundles/sample")
         .Include("~/Scripts/ChromeControl.js") 
         .Include("~/Scripts/flexslider.js")
-        .Include("~/Scripts/PictureBrowser.js"));
+        .Include("~/Scripts/PictureBrowserApp.js")
+        .Include("~/Scripts/PictureBrowserService.js")
+        .Include("~/Scripts/PictureBrowserController.js"));
 
       bundles.Add(new ScriptBundle("~/bundles/modernizr")
         .Include("~/Scripts/modernizr-*"));

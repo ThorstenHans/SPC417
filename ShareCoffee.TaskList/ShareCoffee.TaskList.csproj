@@ -57,7 +57,7 @@
       <DependentUpon>ShareCoffee.TaskList.Services.coffee</DependentUpon>
     </Content>
     <Content Include="Scripts\ShareCoffee.TaskList.Services.min.js">
-      <DependentUpon>ShareCoffee.TaskList.Services.coffee</DependentUpon>
+      <DependentUpon>ShareCoffee.TaskList.Services.js</DependentUpon>
     </Content>
     <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
@@ -73,6 +73,9 @@
     <None Include="Scripts\ShareCoffee.TaskList.coffee" />
     <None Include="Scripts\ShareCoffee.TaskList.Controllers.coffee" />
     <None Include="Scripts\ShareCoffee.TaskList.Services.coffee" />
+    <None Include="Scripts\ShareCoffee.TaskList.Services.min.js.map">
+      <DependentUpon>ShareCoffee.TaskList.Services.min.js</DependentUpon>
+    </None>
     <None Include="Scripts\ShareCoffee\ShareCoffee.js.map" />
     <None Include="Scripts\ShareCoffee\ShareCoffee.src.coffee" />
     <None Include="ShareCoffee_Tasks\ShareCoffee_TasksInstance\SharePointProjectItem.spdata">

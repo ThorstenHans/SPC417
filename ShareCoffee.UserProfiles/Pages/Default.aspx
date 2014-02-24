@@ -10,9 +10,14 @@
   <script type="text/javascript" src="/_layouts/15/sp.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
   <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+
   <script type="text/javascript" src="../Scripts/ShareCoffee/ShareCoffee.min.js"></script>
   <script type="text/javascript" src="../Scripts/ShareCoffee.UserProfiles/ShareCoffee.UserProfiles.min.js"></script>
-  <script type="text/javascript" src="../Scripts/vCard.js"></script>
+
+  <script type="text/javascript" src="../Scripts/vCardApp.js"></script>
+  <script type="text/javascript" src="../Scripts/vCardService.js"></script>
+  <script type="text/javascript" src="../Scripts/vCardController.js"></script>
+
   <WebPartPages:AllowFraming runat="server" />
   <div data-ng-app="vCardApp">
     <div data-ng-controller="vCardController">

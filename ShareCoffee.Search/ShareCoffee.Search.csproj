@@ -56,10 +56,12 @@
       <SharePointProjectItemId>{a3bd9285-5cb3-4d0b-861c-b25b085637d8}</SharePointProjectItemId>
     </None>
     <Content Include="Scripts\Elements.xml" />
-    <Content Include="Scripts\App.js" />
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\SearchService.js" />
+    <Content Include="Scripts\SearchController.js" />
+    <Content Include="Scripts\SearchApp.js" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
     <Content Include="Scripts\_references.js" />

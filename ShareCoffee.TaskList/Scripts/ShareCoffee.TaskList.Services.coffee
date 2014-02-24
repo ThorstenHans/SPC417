@@ -2,15 +2,14 @@
 ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
   {
     loadTasks: (onTasksLoaded, onError) ->
-      
+      # load tasks from SharePoint using REST
       properties = ShareCoffee.REST.build.read.for.angularJS
         url: "web/lists/GetByTitle('Tasks')/items?$Select=Title,Status"
 
       $http(properties).success(onTasksLoaded).error(onError)
-
-    
+      
     addTask: (taskName, onTaskAdded, onError) ->
-
+      # create new Task in SharePoint using REST
       newTask =
         '__metadata':
           'type' : 'SP.Data.TasksListItem'
@@ -25,6 +24,7 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
     
 
     toggleTask: (task, onTaskToggled, onError) ->
+      #toggle task's status using REST 
       updateTask =
         '__metadata':
           'type': 'SP.Data.TasksListItem'

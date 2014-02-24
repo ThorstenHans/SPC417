@@ -43,6 +43,8 @@
   <ItemGroup>
     <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
+    <Content Include="Scripts\vCardController.js" />
+    <Content Include="Scripts\vCardApp.js" />
     <Content Include="vCard\Elements.xml">
       <OpcRelationship>feature-elementmanifest</OpcRelationship>
     </Content>
@@ -72,7 +74,7 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js" />
     <Content Include="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.min.js" />
-    <Content Include="Scripts\vCard.js" />
+    <Content Include="Scripts\vCardService.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>

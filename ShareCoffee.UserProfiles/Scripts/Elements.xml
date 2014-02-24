@@ -10,10 +10,12 @@
     <File Path="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.min.js" Url="Scripts/ShareCoffee.UserProfiles/ShareCoffee.UserProfiles.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js.map" Url="Scripts/ShareCoffee.UserProfiles/ShareCoffee.UserProfiles.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js" Url="Scripts/ShareCoffee.UserProfiles/ShareCoffee.UserProfiles.js" ReplaceContent="TRUE" />
-    <File Path="Scripts\vCard.js" Url="Scripts/vCard.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCardService.js" Url="Scripts/vCardService.js" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.src.coffee" Url="Scripts/ShareCoffee/ShareCoffee.src.coffee" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.min.js" Url="Scripts/ShareCoffee/ShareCoffee.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.js.map" Url="Scripts/ShareCoffee/ShareCoffee.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.js" Url="Scripts/ShareCoffee/ShareCoffee.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCardApp.js" Url="Scripts/vCardApp.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\vCardController.js" Url="Scripts/vCardController.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

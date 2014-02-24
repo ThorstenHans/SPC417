@@ -1,0 +1,1 @@
+﻿window.PictureBrowser = angular.module('PictureBrowser', ['angular-flexslider']);

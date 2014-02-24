@@ -11,10 +11,12 @@
     <ProjectItemFile Source="ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.min.js" Target="Scripts\ShareCoffee.UserProfiles\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js.map" Target="Scripts\ShareCoffee.UserProfiles\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee.UserProfiles\ShareCoffee.UserProfiles.js" Target="Scripts\ShareCoffee.UserProfiles\" Type="ElementFile" />
-    <ProjectItemFile Source="vCard.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="vCardService.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.src.coffee" Target="Scripts\ShareCoffee\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.min.js" Target="Scripts\ShareCoffee\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.js.map" Target="Scripts\ShareCoffee\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.js" Target="Scripts\ShareCoffee\" Type="ElementFile" />
+    <ProjectItemFile Source="vCardApp.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="vCardController.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>
