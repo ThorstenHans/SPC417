@@ -18,6 +18,22 @@
           <Field Name="Status">Not Started</Field>
           <Field Name="PercentComplete">0</Field>
         </Row>
+        <Row>
+          <Field Name="Title">Explain how to easily write queries using ShareCoffee and SharePoint's REST API</Field>
+          <Field Name="Status">Not Started</Field>
+          <Field Name="PercentComplete">0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ensure that all camera equipment is packed</Field>
+          <Field Name="Status">Not Started</Field>
+          <Field Name="PercentComplete">0</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Buy a new wide range lense for Olympus OM-D to make some great photos in Vegas</Field>
+          <Field Name="Status">Not Started</Field>
+          <Field Name="PercentComplete">0</Field>
+        </Row>
+
       </Rows>
     </Data>
   </ListInstance>

@@ -4,7 +4,7 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
     loadTasks: (onTasksLoaded, onError) ->
       # load tasks from SharePoint using REST
       properties = ShareCoffee.REST.build.read.for.angularJS
-        url: "web/lists/GetByTitle('Tasks')/items?$Select=Title,Status"
+        url: "web/lists/GetByTitle('Tasks')/items?$Select=Id,Title,Status"
 
       $http(properties).success(onTasksLoaded).error(onError)
       

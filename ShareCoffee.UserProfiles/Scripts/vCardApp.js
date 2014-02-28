@@ -1,4 +1,4 @@
-﻿window.vCardApp = angular.module('vCardApp', []);
+﻿window.vCardApp = angular.module('vCardApp', ['ngSanitize']);
 window.vCardApp.config([
     '$compileProvider',
     function ($compileProvider) {

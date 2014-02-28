@@ -3,6 +3,7 @@ ShareCoffeeTaskList.controller 'taskListController', ['$scope','taskListService'
   $scope.tasks = []
   $scope.newTask = 'Add another task ...'
   $scope.reverse = true;
+  $scope.filterTerm = '';
   $scope.init = () ->
     onTasksLoaded = (data) ->
       $scope.tasks = data.d.results

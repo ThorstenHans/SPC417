@@ -137,3 +137,7 @@ input[type="checkbox"].input-validation-error {
   width: 600px;
   margin:0px auto;
 }
+
+.jumbotron {
+  padding: 10px;
+}

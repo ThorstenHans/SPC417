@@ -20,5 +20,7 @@
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.min.js" Target="Scripts\ShareCoffee\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.js.map" Target="Scripts\ShareCoffee\" Type="ElementFile" />
     <ProjectItemFile Source="ShareCoffee\ShareCoffee.js" Target="Scripts\ShareCoffee\" Type="ElementFile" />
+    <ProjectItemFile Source="ShareCoffee.TaskList.Services.min.js.map" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="ShareCoffee.TaskList.Controllers.min.js.map" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

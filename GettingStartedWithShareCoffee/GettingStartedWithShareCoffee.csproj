@@ -45,6 +45,9 @@
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{5b0f1157-35b9-4354-a4ed-f435c83d591a}</SharePointProjectItemId>
     </None>
+    <Content Include="Images\1.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
     <Content Include="Pages\Elements.xml" />
     <Content Include="Pages\Default.aspx" />
   </ItemGroup>
@@ -73,9 +76,7 @@
     <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\AppIcon.png">
-      <OpcRelationship>manifest-icon</OpcRelationship>
-    </Content>
+    <Content Include="Images\AppIcon.png" />
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{df998327-f092-4651-8c5e-069cca03291c}</SharePointProjectItemId>

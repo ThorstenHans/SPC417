@@ -48,8 +48,9 @@
           <div class="new-task">
             <input type="text" data-ng-model="newTask" data-ng-focus="newTask = ''" />
             <button type="button" data-ng-click="addTask()">Create Task</button>
+            <div class="pull-right"><input type="text" placeholder="filter" ng-model="filterTerm"/></div>
           </div>
-          <div class="task" ng-repeat="task in tasks | orderBy:'Status':reverse">
+          <div data-ng-class="{'task': task.Status == 'Not Started', 'task completed': task.Status == 'Completed'}" ng-repeat="task in tasks |filter:filterTerm">
             <i ng-click="toggle(task)" data-ng-class="{'fa fa-2 fa-square-o': task.Status == 'Not Started', 'fa fa-2 fa-check-square-o': task.Status == 'Completed'}"></i>
             <span ng-class="{done: task.Status == 'Completed'}">{{task.Title}}</span>
             

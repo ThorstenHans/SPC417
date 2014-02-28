@@ -41,11 +41,14 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Images\3.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
     <Content Include="Scripts\ShareCoffee.TaskList.Controllers.js">
       <DependentUpon>ShareCoffee.TaskList.Controllers.coffee</DependentUpon>
     </Content>
     <Content Include="Scripts\ShareCoffee.TaskList.Controllers.min.js">
-      <DependentUpon>ShareCoffee.TaskList.Controllers.coffee</DependentUpon>
+      <DependentUpon>ShareCoffee.TaskList.Controllers.js</DependentUpon>
     </Content>
     <Content Include="Scripts\ShareCoffee.TaskList.js">
       <DependentUpon>ShareCoffee.TaskList.coffee</DependentUpon>
@@ -72,6 +75,9 @@
     <Content Include="Pages\Default.aspx" />
     <None Include="Scripts\ShareCoffee.TaskList.coffee" />
     <None Include="Scripts\ShareCoffee.TaskList.Controllers.coffee" />
+    <None Include="Scripts\ShareCoffee.TaskList.Controllers.min.js.map">
+      <DependentUpon>ShareCoffee.TaskList.Controllers.min.js</DependentUpon>
+    </None>
     <None Include="Scripts\ShareCoffee.TaskList.Services.coffee" />
     <None Include="Scripts\ShareCoffee.TaskList.Services.min.js.map">
       <DependentUpon>ShareCoffee.TaskList.Services.min.js</DependentUpon>
@@ -105,9 +111,7 @@
     <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\AppIcon.png">
-      <OpcRelationship>manifest-icon</OpcRelationship>
-    </Content>
+    <Content Include="Images\AppIcon.png" />
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d0f82b7d-3df6-46e9-82bf-ef1fefe83e1b}</SharePointProjectItemId>

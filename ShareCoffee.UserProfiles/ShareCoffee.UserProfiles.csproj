@@ -41,6 +41,10 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="Images\6.png">
+      <OpcRelationship>manifest-icon</OpcRelationship>
+    </Content>
+    <Content Include="Pages\FullScreenVCard.aspx" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.js" />
     <Content Include="Scripts\ShareCoffee\ShareCoffee.min.js" />
     <Content Include="Scripts\vCardController.js" />
@@ -85,9 +89,7 @@
     <Content Include="Content\App.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\AppIcon.png">
-      <OpcRelationship>manifest-icon</OpcRelationship>
-    </Content>
+    <Content Include="Images\AppIcon.png" />
     <Content Include="Images\Elements.xml" />
     <None Include="Images\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{75c277ac-7e1b-44ce-8191-e3235f9049fe}</SharePointProjectItemId>

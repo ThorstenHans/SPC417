@@ -3,7 +3,7 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
   {
     loadTasks: (onTasksLoaded, onError) ->
       properties = ShareCoffee.REST.build.read.for.angularJS
-        url: "web/lists/GetByTitle('Tasks')/items?$Select=Title,Status"
+        url: "web/lists/GetByTitle('Tasks')/items?$Select=Id,Title,Status"
         hostWebUrl: ShareCoffee.Commons.getHostWebUrl()
       $http(properties).success(onTasksLoaded).error(onError)
     
@@ -20,7 +20,17 @@ ShareCoffeeTaskList.service 'taskListService', ['$http', ($http) ->
       $http(properties).success(onTaskAdded).error(onError)
     
     toggleTask: (task, onTaskToggled, onError) ->
-      onTaskToggled()
+      updateTask =
+        '__metadata':
+          'type': 'SP.Data.TasksListItem'
+        'Status': task.Status
+        'PercentComplete': task.PercentComplete
+      properties = ShareCoffee.REST.build.update.for.angularJS
+        url: "web/lists/GetByTitle('Tasks')/items/GetById(#{task.Id})"
+        hostWebUrl: ShareCoffee.Commons.getHostWebUrl()
+        payload: updateTask
+
+      $http(properties).success(onTaskToggled).error(onError)
   }
 ]
 

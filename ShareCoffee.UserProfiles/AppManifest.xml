@@ -8,7 +8,7 @@
 >
   <Properties>
     <Title>SPC417 - vCard</Title>
-    <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
+    <StartPage>~appWebUrl/Pages/FullScreenVCard.aspx?{StandardTokens}</StartPage>
   </Properties>
 
   <AppPrincipal>

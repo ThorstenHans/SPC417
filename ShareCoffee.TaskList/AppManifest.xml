@@ -7,7 +7,7 @@
      SharePointMinVersion="15.0.0.0"
 >
   <Properties>
-    <Title>SPC417 - TaskList</Title>
+    <Title>SPC417 - AppWeb - TaskList</Title>
     <StartPage>~appWebUrl/Pages/Default.aspx?{StandardTokens}</StartPage>
   </Properties>
 

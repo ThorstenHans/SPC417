@@ -19,5 +19,7 @@
     <File Path="Scripts\ShareCoffee\ShareCoffee.min.js" Url="Scripts/ShareCoffee/ShareCoffee.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.js.map" Url="Scripts/ShareCoffee/ShareCoffee.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\ShareCoffee\ShareCoffee.js" Url="Scripts/ShareCoffee/ShareCoffee.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Controllers.min.js.map" Url="Scripts/ShareCoffee.TaskList.Controllers.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\ShareCoffee.TaskList.Services.min.js.map" Url="Scripts/ShareCoffee.TaskList.Services.min.js.map" ReplaceContent="TRUE" />
   </Module>
 </Elements>

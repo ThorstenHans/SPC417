@@ -3,7 +3,7 @@
   <ClientWebPart Name="vCard" 
                  Title="vCard AppPart" 
                 Description="Displays the vCard of the current user" 
-                 DefaultWidth="330" DefaultHeight="140">
+                 DefaultWidth="500" DefaultHeight="240">
 
     <!-- Content element identifies the location of the page that will render inside the client web part
          Properties are referenced on the query string using the pattern _propertyName_

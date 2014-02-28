@@ -3,6 +3,7 @@ ShareCoffeeTaskList.controller 'taskListController', ['$scope','taskListService'
   $scope.tasks = []
   $scope.newTask = 'Add another task ...'
   $scope.reverse = true;
+  $scope.filterTerm = '';
   $scope.init = () ->
     onTasksLoaded = (data) ->
       $scope.tasks = data.d.results
@@ -22,8 +23,12 @@ ShareCoffeeTaskList.controller 'taskListController', ['$scope','taskListService'
     else
       task.Status = 'Completed'
       task.PercentComplete = 1
-    taskListService.toggleTask task
-
+    onToggled = (task)->
+      console.log "upadted #{JSON.stringify(task)}"
+    onError = (error) ->
+      console.log error
+    taskListService.toggleTask task, onToggled, onError
+  
   $scope.init()
 ]
 
